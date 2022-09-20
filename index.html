@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href = "title.png"  >
+    <title>Youtube </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+    <nav class="navbar">
+      <div class="toggle-btn">
+        <a href="index.html"><img   src="./bars-solid.svg" alt="logo" class = "menuIcon" /></a>
+        
+      </div>
+      <div >
+        <a href="index.html"><img   src="./logo.png" alt="logo" class="logo" /></a>
+
+      </div>
+
+      <div class="search-box">
+        <input type="text" class="search-bar" placeholder="&nbsp;&nbsp;Search" id="inputBox"  />
+        <button  onclick="srch()" class="search-btn">
+          <img src="magnifying-glass-solid.svg" alt="search-bar" />
+        </button>
+
+
+        <button id="mic"  onclick="" class="mic-btn">
+          <img   src="./microphone-solid.svg"  class="icon"  alt="speak to search"/>
+        </button>
+        
+      </div>
+
+      <div class="user-options">
+        <img src="./video-solid.svg" class="icon" alt="create" />
+        <img src="./bell-regular.svg" class="icon" alt="notification" />
+        <p class="noti">9+</p>
+        
+
+        <div class="user-dp">
+          <img src="./dp.png"  />
+        </div>
+      </div>
+    
+
+    </nav>
+
+    <div class="side-bar">
+      <a href="index.html" class="links"><img src="./house-solid.svg"  /><p>Home</p></a>
+
+      <a href="index.html" class="links"><img src="./compass-regular.svg"  /><p>Explore</p></a>
+
+      <a href="index.html" class="links"><img src="./clapperboard-solid.svg" /><p>Subscription</p></a>
+      <hr />
+
+      <a href="index.html" class="links"><img src="./clock-rotate-left-solid.svg"  /><p>History</p></a>
+      <a href="index.html" class="links"><img src="./youtube.svg"  /><p>Your Videos</p></a>
+      <a href="index.html" class="links"><img src="./chevron-down-solid.svg" /><p>Show More</p></a>
+      <hr />
+
+      <input type="hidden" class="search-bar"  id="subi"  />
+      <button id="subbtn" onclick="subs()" class="fliter-options">Subscription</button>
+      <button id="subbtn" onclick="subs()" class="fliter-options">Channel information</button>
+      <hr />
+
+
+    </div>
+  
+    
+
+
+    <div class="filters">
+      <button onclick="trending()" class="fliter-options"> All</button>
+      <button onclick="trending()"   class="fliter-options">mixes</button>
+      <button onclick="trending()" class="fliter-options">Bollywood Music</button>
+      <button onclick="trending()" class="fliter-options">Indian Pop Music</button>
+      <button onclick="trending()" class="fliter-options">Live</button>
+      <button onclick="trending()" class="fliter-options">stocks</button>
+      <button onclick="trending()" class="fliter-options">Timers</button>
+      <button onclick="trending()" class="fliter-options">Trialers</button>
+      <button onclick="trending()" class="fliter-options">Comedy</button>
+      <button onclick="trending()" class="fliter-options">Wildlife</button>
+      <button onclick="trending()" class="fliter-options">Gaming</button> 
+      
+    </div>
+ 
+    <div id="videosResults"></div>
+    <div id="textResults"></div>
+    
+
+    
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
+
+
